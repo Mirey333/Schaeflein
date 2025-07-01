@@ -156,30 +156,30 @@ export default function HomePage() {
                     lead.source.includes('Sprintbox') || 
                     lead.source.includes('Truck') || 
                     lead.company.includes('Express') ||
-                    lead.stage === 'Qualified'
+                    lead.status === 'Qualifiziert'
                   ).slice(0, 4).map((lead) => (
                     <div key={lead.id} className="flex items-center justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
                       <div className="flex items-center space-x-3">
                         <div className={`w-3 h-3 rounded-full ${
-                          lead.stage === 'Qualified' ? 'bg-green-500' :
-                          lead.stage === 'Contact' ? 'bg-blue-500' :
-                          lead.stage === 'Proposal' ? 'bg-orange-500' : 'bg-gray-400'
+                          lead.status === 'Qualifiziert' ? 'bg-green-500' :
+                          lead.status === 'Kontaktiert' ? 'bg-blue-500' :
+                          lead.status === 'Angebot' ? 'bg-orange-500' : 'bg-gray-400'
                         }`} />
                         <div>
                           <p className="font-semibold text-gray-900">{lead.company}</p>
                           <p className="text-sm text-gray-600">
                             {lead.source.includes('Sprintbox') ? '⚡ Sprintbox' : 
-                             lead.source.includes('Truck') ? '🚛 Truckservice' : '📦 Standard'} • {lead.value.toLocaleString('de-DE')}€
+                             lead.source.includes('Truck') ? '🚛 Truckservice' : '📦 Standard'} • {lead.potentialValue.toLocaleString('de-DE')}€
                           </p>
                         </div>
                       </div>
                       <div className="text-right">
                         <span className={`px-2 py-1 rounded-full text-xs font-medium ${
-                          lead.stage === 'Qualified' ? 'bg-green-100 text-green-800' :
-                          lead.stage === 'Contact' ? 'bg-blue-100 text-blue-800' :
-                          lead.stage === 'Proposal' ? 'bg-orange-100 text-orange-800' : 'bg-gray-100 text-gray-800'
+                          lead.status === 'Qualifiziert' ? 'bg-green-100 text-green-800' :
+                          lead.status === 'Kontaktiert' ? 'bg-blue-100 text-blue-800' :
+                          lead.status === 'Angebot' ? 'bg-orange-100 text-orange-800' : 'bg-gray-100 text-gray-800'
                         }`}>
-                          {lead.stage}
+                          {lead.status}
                         </span>
                       </div>
                     </div>
