@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply text-logistics-700;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+  }
+  
+  .btn-secondary {
+    @apply bg-logistics-100 hover:bg-logistics-200 text-logistics-700 font-medium py-2 px-4 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-logistics-500 focus:ring-offset-2;
+  }
+  
+  .btn-action {
+    @apply bg-white hover:bg-gray-50 border border-gray-200 text-gray-700 font-medium p-4 rounded-lg transition-all duration-200 text-center flex flex-col items-center space-y-2 hover:border-primary-300 hover:shadow-sm;
+  }
+  
+  .btn-action-active {
+    @apply bg-primary-50 border-primary-200 text-primary-700 shadow-sm;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-sm border border-logistics-200 p-6;
+  }
+  
+  .card-header {
+    @apply flex items-center justify-between pb-4 mb-4 border-b border-logistics-200;
+  }
+  
+  .input-field {
+    @apply w-full px-3 py-2 border border-logistics-300 rounded-lg focus:ring-primary-500 focus:border-primary-500 transition-colors duration-200;
+  }
+  
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+  
+  .badge-success {
+    @apply badge bg-success-50 text-success-600;
+  }
+  
+  .badge-warning {
+    @apply badge bg-warning-50 text-warning-600;
+  }
+  
+  .badge-danger {
+    @apply badge bg-danger-50 text-danger-600;
+  }
+  
+  .badge-primary {
+    @apply badge bg-primary-50 text-primary-600;
+  }
+  
+  .gradient-bg {
+    background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+  }
+  
+  .stats-card {
+    @apply card hover:shadow-md transition-shadow duration-300 cursor-pointer;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
+} 
