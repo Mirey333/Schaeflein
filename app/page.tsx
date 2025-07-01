@@ -36,8 +36,8 @@ export default function HomePage() {
     { id: 'customers', label: 'Bestandskunden', icon: Users },
     { id: 'campaigns', label: 'Kampagnen & Social Media', icon: MessageSquare },
     { id: 'processes', label: 'CRM-Automatisierung', icon: Settings },
-    { id: 'portal', label: 'Kundenportal', icon: Globe },
     { id: 'advanced-lead-gen', label: 'Advanced Lead Generation', icon: Rocket },
+    { id: 'portal', label: 'Kundenportal', icon: Globe },
   ]
 
   return (
