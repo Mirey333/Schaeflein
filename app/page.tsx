@@ -108,7 +108,7 @@ export default function HomePage() {
                   <Target className="h-12 w-12 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-3xl font-bold mb-2">CRM-Strategie 2024</h2>
+                  <h2 className="text-3xl font-bold mb-2">CRM-Strategie 2025</h2>
                   <p className="text-xl text-white/90 mb-4">
                     Fokus auf Neukundengewinnung und Bestandskundenpflege
                   </p>
