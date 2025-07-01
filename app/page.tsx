@@ -131,13 +131,6 @@ export default function HomePage() {
                     </div>
                   </div>
                 </div>
-                <div className="text-right">
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                    <div className="text-2xl font-bold">ROI</div>
-                    <div className="text-sm text-white/80">Workshop-Ziel</div>
-                    <div className="text-lg font-semibold mt-1">35k€ Setup</div>
-                  </div>
-                </div>
               </div>
             </div>
 
