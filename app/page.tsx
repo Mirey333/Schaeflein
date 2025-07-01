@@ -62,10 +62,6 @@ export default function HomePage() {
               </div>
             </div>
             <div className="flex items-center space-x-4">
-              <div className="text-right text-sm">
-                <p className="font-medium text-gray-900">Workshop-Demo</p>
-                <p className="text-gray-600">ROI-Orientiert</p>
-              </div>
               <div className="bg-success-50 px-3 py-1 rounded-full">
                 <span className="text-success-700 text-sm font-medium">✅ Demo-System</span>
               </div>
