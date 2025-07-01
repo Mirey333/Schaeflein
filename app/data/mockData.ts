@@ -1420,7 +1420,7 @@ export const mockAccountBasedMarketing: AccountBasedMarketing[] = [
 ];
 
 // Competitive Intelligence
-export const mockCompetitiveIntelligence: CompetitiveIntel[] = [
+export const mockCompetitiveIntelligence: CompetitiveIntelligence[] = [
   {
     id: 'comp_001',
     competitor: 'DHL Supply Chain',

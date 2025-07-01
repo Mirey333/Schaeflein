@@ -179,21 +179,7 @@ export interface AccountBasedMarketing {
   updatedAt: string;
 }
 
-export interface CompetitiveIntelligence {
-  id: string;
-  competitorName: string;
-  strengths: string[];
-  weaknesses: string[];
-  pricing: string;
-  marketShare: number;
-  keyClients: string[];
-  uniqueSellingPoints: string[];
-  threats: string[];
-  opportunities: string[];
-  lastUpdated: string;
-  source: string;
-  notes: string;
-}
+
 
 export interface LeadNurturing {
   id: string;
